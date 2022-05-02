@@ -16,9 +16,9 @@ docker pull ghcr.io/lgaches/swifttools:latest
 You can run `swiftlint` or `swiftformat` inside of docker like:
 
 ```sh
-docker run -it -v `pwd`:`pwd` -w `pwd` ghcr.io/lgaches/swifttools:latest swiftlint
+docker run --rm -it -v `pwd`:`pwd` -w `pwd` ghcr.io/lgaches/swifttools:latest swiftlint
 ```
 
 ```sh
-docker run -it -v `pwd`:`pwd` -w `pwd` ghcr.io/lgaches/swifttools:latest swiftformat .
+docker run --rm -it -v `pwd`:`pwd` -w `pwd` ghcr.io/lgaches/swifttools:latest swiftformat .
 ```
